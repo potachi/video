@@ -2,13 +2,14 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Anniversario</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
+            background-color:black;
         }
         .video-wrapper {
             position: fixed;
@@ -16,23 +17,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
         }
-        .video-wrapper iframe {
+        iframe {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vw;
-            height: 100vh;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <div class="video-wrapper">
-        <div style="padding:177.78% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1064531966?h=11025e0f8a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Anniversario"></iframe>
-        </div>
+        <iframe src="https://player.vimeo.com/video/1064531966?h=11025e0f8a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=0&amp;pip=1&amp;playsinline=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Anniversario"></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
